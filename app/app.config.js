@@ -1,18 +1,19 @@
 'use strict';
 
-angular.
-  module('hostelApp').
-  config(['$locationProvider' ,'$routeProvider',
-    function config($locationProvider, $routeProvider) {
+hostelApp.config(['$routeProvider',
+    function($routeProvider) {
       $routeProvider.
         when('/', {
-          template: '/partials/home.html'
+          templateUrl: 'partials/home.html'
         }).
         when('/rooms', {
-          template: '/partials/rooms.html'
+          templateUrl: 'partials/rooms.html'
         }).
         when('/food', {
-          template: '/partials/food.html'
+          templateUrl: 'partials/food.html'
+        }).
+        otherwise({
+          redirectTo:'partials/home.html'
         });
     }
   ]);

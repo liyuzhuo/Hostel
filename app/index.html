@@ -13,7 +13,7 @@
     <link href="styles/main.css" rel="stylesheet">
 </head>
 
-<body id="top">
+<body id="top" ng-app="hostelApp">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"><a href="contact.html" id="contact-button" class="mdl-button mdl-button--fab mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp"><i class="material-icons">mail</i></a>
         <header class="mdl-layout__header mdl-layout__header--waterfall site-header">
             <div class="mdl-layout__header-row site-logo-row"><span class="mdl-layout__title">
@@ -42,8 +42,8 @@
                 <a class="mdl-navigation__link" href="contact.html">Contact</a>
             </nav>
         </div>
-        <main class="mdl-layout__content" ng-app="hostelApp">
-            <div ng-view></div>
+        <main class="mdl-layout__content">
+           <div ng-view></div>
             <footer class="mdl-mini-footer">
                 <div class="footer-container">
                     <div class="mdl-logo">&copy; LYZ. Design: <a href="https://templateflip.com/" target="_blank">Padraic Hostel</a></div>
@@ -57,7 +57,6 @@
         <script src="/bower_components/angular/angular.js"></script>
         <script src="/bower_components/angular-route/angular-route.js"></script>
         <script src="app.js"></script>
-        <script src="app.config.js"></script>
     </div>
 </body>
 
